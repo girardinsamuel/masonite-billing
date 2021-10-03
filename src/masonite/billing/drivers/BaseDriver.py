@@ -1,5 +1,4 @@
 class BaseDriver:
-
     def __init__(self, application):
         self.application = application
         self.options = {}
@@ -46,7 +45,8 @@ class BaseDriver:
         Arguments:
             plan_id {string} -- The Stripe plan identifier.
         Keyword Arguments:
-            now {bool} -- Whether the user should be canceled now or at the end of the billing period. (default: {False})
+            now {bool} -- Whether the user should be canceled now or at the end of the billing
+            period. (default: {False})
         Returns:
             False|stripe.subscription.retrieve
         """
