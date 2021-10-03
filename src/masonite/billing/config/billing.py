@@ -1,12 +1,16 @@
 """Billing Settings"""
+from masonite.environment import env
 
-"""
-|--------------------------------------------------------------------------
-| A Heading of The Setting Being Set
-|--------------------------------------------------------------------------
-|
-| A quick description
-|
-"""
-
-SETTING = "some value"
+DRIVERS = {
+    "default": "stripe",
+    "stripe": {
+        "client": env("STRIPE_CLIENT"),
+        "secret": env("STRIPE_SECRET"),
+        "currency": "usd",
+    },
+    "paddle": {
+        "client": env("STRIPE_CLIENT"),
+        "secret": env("STRIPE_SECRET"),
+        "currency": "usd",
+    },
+}
