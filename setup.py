@@ -11,9 +11,11 @@ setup(
     version="0.0.1",
     packages=[
         "masonite.billing",
-        "masonite.billing.providers",
-        "masonite.billing.controllers",
         "masonite.billing.commands",
+        "masonite.billing.config",
+        "masonite.billing.controllers",
+        "masonite.billing.drivers",
+        "masonite.billing.providers",
     ],
     package_dir={"": "src"},
     description="Easily add billing services (Stripe, Paddle) to your app",
