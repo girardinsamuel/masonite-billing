@@ -16,7 +16,7 @@ setup(
         "masonite.billing.commands",
     ],
     package_dir={"": "src"},
-    description="WIP (not usable for now) Easily add billing services (Stripe, Paddle) to your app",
+    description="Easily add billing services (Stripe, Paddle) to your app",
     long_description=long_description,
     long_description_content_type="text/markdown",
     # The project's main homepage.
